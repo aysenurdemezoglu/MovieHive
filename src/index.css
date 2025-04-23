@@ -238,16 +238,6 @@ body {
   color: #9ca3af;
 }
 
-@media (max-width: 768px) {
-  .movie-detail-content {
-    grid-template-columns: 1fr;
-  }
-
-  .movie-poster-section {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
 
 /* Search Results Styles */
 .page-title {
@@ -355,4 +345,68 @@ body {
   margin-left: 1rem;
 }
 
-/* End of styles */
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .search-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .movie-detail-title {
+    font-size: 2rem;
+  }
+
+  .movie-genre,
+  .movie-director,
+  .movie-actors,
+  .movie-plot,
+  .movie-awards {
+    font-size: 0.95rem;
+  }
+
+  .genre-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .search-button {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .movie-info {
+    padding: 0.75rem;
+  }
+
+  .favorite-button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .movie-detail-container {
+    padding: 1rem;
+  }
+}
+
